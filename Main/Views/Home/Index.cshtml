@@ -1,0 +1,56 @@
+﻿<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+
+            @for (var i = 0; i < Model.Count; i++)
+            {
+
+                <div class="col-lg-4 card">
+                    <img src="/@Model[i].ImageLink" width="300" height="300" />
+                    <p>
+                        Title: @Model[i].Title<br />
+                        Author: @Model[i].Author<br />
+                        Year: @Model[i].Year<br />
+                        Language: @Model[i].Language<br />
+                    </p>
+                    <p><a class="btn btn-info" href="@Model[i].Link" role="button">Detail &raquo;</a></p><br />
+                </div>
+                
+            }
+
+        </div>
+    </div>
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
